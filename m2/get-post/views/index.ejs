@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>listado</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>listado</h1>
+    <ul>
+      <% results.forEach((item) => { %>
+        <li><a href="/users/<%= item.id %>"><%= item.name %></a></li>
+      <% }) %>
+
+    </ul>
+  </body>
+</html>
